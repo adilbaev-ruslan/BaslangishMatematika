@@ -11,7 +11,6 @@
         android:id="@+id/tvCountQuestions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1/10"
         android:textSize="54sp"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
