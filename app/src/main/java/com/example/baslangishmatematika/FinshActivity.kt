@@ -17,16 +17,13 @@ class FinshActivity : AppCompatActivity() {
 
         buttonNewGame.setOnClickListener{
             var intent = Intent(this, MainActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
-            // new branch test
         }
     }
 
     override fun onDestroy() {
         super.onDestroy()
         var intent = Intent(this, MainActivity::class.java)
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
     }
 }
