@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvCountQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/10"
+        android:textSize="54sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvFirstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="54sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvOrgument"
+        app:layout_constraintVertical_bias="0.3"/>
+
+    <TextView
+        android:id="@+id/tvOrgument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="54sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@id/tvFirstNumber"
+        app:layout_constraintTop_toTopOf="@id/tvFirstNumber"
+        app:layout_constraintEnd_toStartOf="@id/tvSecondNumber"
+        app:layout_constraintBottom_toBottomOf="@id/tvFirstNumber"/>
+
+    <TextView
+        android:id="@+id/tvSecondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="54sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@id/tvOrgument"
+        app:layout_constraintTop_toTopOf="@id/tvOrgument"
+        app:layout_constraintEnd_toStartOf="@id/tvTen"
+        app:layout_constraintBottom_toBottomOf="@id/tvOrgument"/>
+
+    <TextView
+        android:id="@+id/tvTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ten"
+        android:textSize="54sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@id/tvSecondNumber"
+        app:layout_constraintTop_toTopOf="@id/tvSecondNumber"
+        app:layout_constraintBottom_toBottomOf="@id/tvSecondNumber"
+        app:layout_constraintEnd_toEndOf="@id/tvSoraw"/>
+
+    <TextView
+        android:id="@+id/tvSoraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/soraw"
+        android:textSize="54sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@id/tvTen"
+        app:layout_constraintTop_toTopOf="@id/tvTen"
+        app:layout_constraintBottom_toBottomOf="@id/tvTen"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@id/buttonC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="variantClick"/>
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonD"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="variantClick"/>
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/buttonD"
+        app:layout_constraintStart_toStartOf="@id/buttonD"
+        app:layout_constraintEnd_toEndOf="@id/buttonD"
+        android:onClick="variantClick"/>
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/buttonC"
+        app:layout_constraintEnd_toEndOf="@id/buttonC"
+        app:layout_constraintBottom_toTopOf="@id/buttonC"
+        android:onClick="variantClick"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
