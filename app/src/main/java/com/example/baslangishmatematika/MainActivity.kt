@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        playGame()
+        playGame() //play game
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
